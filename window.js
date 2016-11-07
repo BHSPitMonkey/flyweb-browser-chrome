@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var a = document.createElement("a");
         var name = services[i].serviceName.replace("._flyweb._tcp.local", "");
         var aText = document.createTextNode(name);
-        a.setAttribute("href", services[i].serviceHostPort);
+        a.setAttribute("href", "http://" + services[i].serviceHostPort);
         a.setAttribute("title", services[i].serviceHostPort);
         a.setAttribute("target", "_blank");
         a.appendChild(aText);
